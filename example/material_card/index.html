@@ -5,16 +5,26 @@
     <title>material-card</title>
 
     <link rel="stylesheet" href="demo.css">
+    <link rel="import" href="packages/material_elements/material.html">
     <link rel="import" href="packages/material_elements/material_card.html">
+    <link rel="import" href="packages/core_elements/core_header_panel.html">
+    <link rel="import" href="packages/core_elements/core_toolbar.html">
+    <link rel="import" href="packages/core_elements/core_icon_button.html">
   </head>
 
   <body unresolved>
-    <section>
-      <div>Travel Stream</div>
-      
+  
+  <div layout horizontal wrap>  
+    <core-header-panel mode="seamed">
+      <core-toolbar style="background: #009688">
+        <core-icon-button icon="menu"></core-icon-button>
+        <h2 flex>Travel Stream</h2>
+        <core-icon-button icon="search"></core-icon-button>
+      </core-toolbar> 
+       
       <material-card>  
         <div class="hero" media style="background-image: url('//gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/50907600/ea9dd2f775b3af47c4cbda74838661e89c7bd7ae/5.jpg')">
-          <span class="title">Pont de Petroli</span>
+          <h1>Pont de Petroli</h1>
         </div>
         <p>Pont del Petroli is an oil jetty from Badalona built for the discharge of petroleum products from tanker vessels and, since 2009, remodeled as a space for scientist and public uses.</p>
         <paper-button action>Share</paper-button>
@@ -22,23 +32,116 @@
       </material-card>      
       <material-card>  
         <div class="hero" media style="background-image: url('//material-design.storage.googleapis.com/images/style-imagery-bestpractices-manipulate-lake-do_large_mdpi.png')">
-          <span class="title">Kangaroo Valley Safari</span>
+          <h1>Kangaroo Valley Safari</h1>
         </div>
         <p>Located two hours south of Sydney in the Southern Highlands of New South Wales, ...</p>
         <paper-button action>Share</paper-button>
         <paper-button action>Learn more</paper-button>
       </material-card>
-    </section>
+    </core-header-panel>
     
-    <section>
-      <div>Travel Stream</div>
-      
+    <core-header-panel mode="seamed">
+      <core-toolbar style="background: #e91e63">
+        <core-icon-button icon="menu"></core-icon-button>
+        <h2 flex>My Books</h2>
+        <core-icon-button icon="search"></core-icon-button>
+      </core-toolbar> 
+        
       <material-card title="Welcome Back!">  
-        <p>It's been a while, have you read any new books lately?</p>
+        <p>It's been a while, have you<br/> read any new books lately?</p>
         <paper-button action>Nope</paper-button>
         <paper-button action>Yes</paper-button>
       </material-card>
-    </section>
+        
+      <material-card title="I, Robot" subhead="By Isaac Asimov">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="1984" subhead="By George Orwell">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="The Metamorphosis" subhead="By Kafka">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="Philosophiæ Naturalis Principia Mathematica" subhead="By Isaac Newton">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+    </core-header-panel>
+    
+    <core-header-panel mode="seamed">
+      <core-toolbar style="background: none">
+        <core-icon-button icon="menu"></core-icon-button>
+        <h2 flex style="color: rgba(0,0,0,.87)">Notes</h2>
+        <core-icon-button icon="search"></core-icon-button>
+      </core-toolbar> 
+        
+      <material-card title="Welcome Back!">  
+        <p>It's been a while, have you<br/> read any new books lately?</p>
+        <paper-button action>Nope</paper-button>
+        <paper-button action>Yes</paper-button>
+      </material-card>
+        
+      <material-card title="I, Robot" subhead="By Isaac Asimov">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="1984" subhead="By George Orwell">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="The Metamorphosis" subhead="By Kafka">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="Philosophiæ Naturalis Principia Mathematica" subhead="By Isaac Newton">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+    </core-header-panel>
+    
+    <core-header-panel mode="seamed">
+      <core-toolbar style="background: #3f51b5;color: rgba(255,255,255,.54)">
+        <core-icon-button icon="menu"></core-icon-button>
+        <h2 flex>Discover</h2>
+        <core-icon-button icon="search"></core-icon-button>
+      </core-toolbar> 
+        
+      <material-card title="Welcome Back!">  
+        <p>It's been a while, have you<br/> read any new books lately?</p>
+        <paper-button action>Nope</paper-button>
+        <paper-button action>Yes</paper-button>
+      </material-card>
+        
+      <material-card title="I, Robot" subhead="By Isaac Asimov">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="1984" subhead="By George Orwell">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="The Metamorphosis" subhead="By Kafka">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+        
+      <material-card title="Philosophiæ Naturalis Principia Mathematica" subhead="By Isaac Newton">  
+        <paper-button action>Free Sample</paper-button>
+        <paper-button action>Review</paper-button>
+      </material-card>
+    </core-header-panel>
+  </div>
     
     <script type="application/dart">export "package:polymer/init.dart";</script>
   </body>

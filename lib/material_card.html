@@ -2,7 +2,6 @@
 <link rel="import" href="../../packages/paper_elements/paper_shadow.html">
 <link rel="import" href="../../packages/paper_elements/paper_button.html">
 <link rel="import" href="../../packages/paper_elements/paper_ripple.html">
-<link rel="import" href="../../packages/paper_elements/roboto.html">
 
 <polymer-element name="material-card" layout vertical>
   <template>
@@ -13,7 +12,10 @@
     <div id="primaryAction" on-tap="{{ primaryAction }}">
       <template if="{{ title != '' }}">
         <header>
-          <h2>{{title}}</h2>
+          <h1>{{title}}</h1>
+          <template if="{{ subhead != '' }}">
+            <h3>{{subhead}}</h3>
+          </template>
         </header>    
       </template>
       <content id="richMedia" select="[media]"></content>

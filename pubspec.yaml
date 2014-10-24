@@ -8,6 +8,7 @@ dependencies:
 transformers:
 - sass
 - polymer:
+    inline_stylesheets: false
     entry_points:
       - example/index.html
       - example/material_card/index.html

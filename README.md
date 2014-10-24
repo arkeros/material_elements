@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/24932020/material-design-scaling-font

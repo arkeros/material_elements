@@ -5,25 +5,26 @@
   color: #212121
   margin: 4px
   
-  header
-    font-size: 24px
+  header   
+    padding: 16px 
     
-    h2
-      padding: 16px
-      font-weight: 400
+    /deep/ h3
+      color: rgba(0, 0, 0, .54) !important
       
   #primaryActionArea
     position: relative
       
   #actions
-    padding: 16px
-    padding-top: 0
+    padding: 0
   
   ::content
     p, [text]
       margin: 0
       padding: 16px
-      font-size: 16px
+      font-size: 14px
+      font-size: 0.875rem
       
     action
-      font-weight: 500
+      
+      &:first-of-type
+        margin-left: 0
